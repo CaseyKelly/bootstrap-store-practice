@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" contents="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">The Store</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Browse Products</a></li>
+          <li><a href="#">Price List</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9"><%= yield %></div>
+      <div class="col-md-3">
+        <h2>About Us</h2>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elementum mattis semper. Vivamus malesuada eu ex eu egestas. Aliquam efficitur ut magna sit amet molestie. Morbi finibus, nisi a facilisis molestie, tortor velit accumsan ipsum, nec tempus risus ex eu ligula. Maecenas non dui interdum, consequat augue eget, venenatis quam. In consequat nulla nec purus faucibus luctus varius id erat. Ut rhoncus mattis sem, non molestie neque rhoncus a.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
